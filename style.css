@@ -1,0 +1,207 @@
+:root{
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+--body-bg-color: linear-gradient(0.25turn, #338079, #ebf8e1, #cebeac);
+
+
+ --header: 5.8rem;
+ --footer: 6rem;
+ --main: calc(100vw - calc(var(--header) + var(--footer)));
+
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: var(--body-bg-color);
+}
+
+.main-content{
+
+    height: 80vh;
+    width: 100vw;
+}
+
+#container {
+	height: 100vh;
+    width: 100vw;
+}
+#header {
+    width: 100%;
+    height: var(--header);
+    background-color: black;
+    top:0;
+}
+#footer {
+    bottom: 0;
+    width: 100%;
+    height: var(--footer);
+    background-color: black;
+}
+
+/*HEADER NAV*/
+.div-header-content {
+    display: flex;
+    justify-content: space-between;
+}
+/*IMG LOGO TOP LEFT*/
+.logo a {
+    display: flex;
+    text-decoration: none;
+    margin-left: 2em;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 1000;
+    padding-left: 0.5em;
+    padding-right: 0;
+    color: whitesmoke;
+}
+.header-nav {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.header-nav ul {
+    list-style: none;
+    margin-right: 2em;
+}
+.header-nav li {
+    display: inline;
+    padding-left: 1.5em;
+}
+.header-nav a {
+    text-decoration: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color:#ddd;
+    font-weight: bold;
+}
+.header-nav a:hover {
+    background-color: #9c959544;
+    border-radius: 10%;
+    color: rgba(104, 209, 186, 0.733);
+    opacity: 0.6;
+    transition: 0.s;
+}
+/*DIV-FLEX CONTENT*/
+.div-flex-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.content {
+    letter-spacing: normal;
+    line-height: 1em;
+    margin-right: 5em;
+}
+.content h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px 8px #e2dfdb;
+}
+.content p {
+    font-size: 1.5em;
+}
+.btn-content {
+    align-items: center;
+    background-image: linear-gradient(144deg,#30b6a6be, #ebf8e1 50%,#cebeac);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(226, 213, 238, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #8b7474;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .btn-content:active,
+  .btn-content:hover {
+    outline: 0;
+  }
+  
+  .btn-content span {
+    background-color: rgba(145, 199, 187, 0.692);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .btn-content:hover span {
+    background: none;
+  }
+  
+  @media (max-width: 958px) {
+    .btn-content {
+      font-size: 24px;
+      min-width: 196px;
+    }
+    .content {
+        margin-left: 1em;
+    }
+    .content-1-photo img {
+        max-width: 350px;
+        min-width: 350px;
+    }
+    .content h1 {
+        font-size: 2em;
+    }
+    .content p {
+        line-height: 1em;
+    }
+  }
+
+.content-1-photo img {
+    box-shadow: 0 0 8px 8px rgba(222, 230, 197, 0.514) inset;
+    border-radius: 1500px;
+}
+/*DIV FLEX FOOTER CONTENT*/
+.div-flex-footer-content {
+    display: flex;
+    justify-content: center;
+}
+.flex-content ul {
+    list-style: none;
+}
+.flex-content li {
+    display:inline;
+}
+.flex-content a {
+    text-decoration: none;
+    padding-top: 0.3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 5px;
+    color:#ddd;
+    font-size: 40px;
+}
+.flex-content a:hover {
+    color: rgba(104, 209, 186, 0.733);
+    opacity: 0.6;
+    transition: 0.s;
+}
+
+
+/* On smaller screens, decrease text size 
+@media only screen and (max-width: 677px) {
+    .div-flex-main-container {font-size: 11px}
+  }
+  */
